@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { useApp } from '../context'
 import { AlertCircle, MessageSquare, Newspaper, Home } from 'lucide-react'
@@ -17,7 +18,7 @@ export default function CitizenDashboard() {
     category: '',
   })
 
-  const { issues, addIssue, feedback, addFeedback, updates } = useApp()
+  const { issues, addIssue, addFeedback, updates } = useApp()
 
   const handleReportSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -63,7 +64,7 @@ export default function CitizenDashboard() {
     return colors[status as keyof typeof colors] || 'bg-gray-100 text-gray-800'
   }
 
-  const getPriorityBadge = (priority: string) => {
+  const getPriorityBadge = (priority: 'Low' | 'Medium' | 'High') => {
     const colors = {
       Low: 'bg-blue-100 text-blue-800',
       Medium: 'bg-orange-100 text-orange-800',
