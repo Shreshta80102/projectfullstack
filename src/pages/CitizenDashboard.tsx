@@ -64,14 +64,7 @@ export default function CitizenDashboard() {
     return colors[status as keyof typeof colors] || 'bg-gray-100 text-gray-800'
   }
 
-  const getPriorityBadge = (priority: 'Low' | 'Medium' | 'High') => {
-    const colors = {
-      Low: 'bg-blue-100 text-blue-800',
-      Medium: 'bg-orange-100 text-orange-800',
-      High: 'bg-red-100 text-red-800',
-    }
-    return colors[priority] || 'bg-gray-100 text-gray-800'
-  }
+
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">

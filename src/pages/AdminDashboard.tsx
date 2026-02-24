@@ -1,5 +1,5 @@
 import { useApp } from '../context'
-import { BarChart3, Users, TrendingUp, Activity } from 'lucide-react'
+import { Users, TrendingUp, Activity } from 'lucide-react'
 
 export default function AdminDashboard() {
   const { issues, feedback, updates } = useApp()
