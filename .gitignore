@@ -2,6 +2,13 @@
 node_modules/
 dist/
 dist-ssr/
+frontend/node_modules/
+frontend/dist/
+backend/target/
+backend/.mvn/
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
 *.local
 .env
 .env.local
